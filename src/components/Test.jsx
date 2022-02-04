@@ -29,8 +29,8 @@ const Content = () => (
 );
 const Test = () => {
   return (
-    <div className="pt-32">
-      <div className="bg-[#131313] p-[20px] rounded-[15px] text-[#fff] overflow-x-scroll w-[950px]">
+    <div className="">
+      <div className="bg-[#131313] p-[20px] rounded-[15px] text-[#fff] overflow-x-scroll w-[984px]">
         <div className="flex space-x-4">
           <Content />
           <Content />
