@@ -35,7 +35,7 @@ function App() {
   //   setProducts(response.data)
   // }
 
-  console.log(products);
+  // console.log(products);
 
   ///////////////////////////////////////////////////
 

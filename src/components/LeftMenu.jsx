@@ -24,7 +24,7 @@ const LeftMenu = ({ products }) => {
             {products &&
               products.map((product) => {
                 return (
-                  <option value="Products" className="text-[17px] text-white">
+                  <option value="Products" className="text-[17px] text-white" key={product.time}>
                     {product.product_name}
                   </option>
                 );
@@ -39,7 +39,7 @@ const LeftMenu = ({ products }) => {
             {products &&
               products.map((product) => {
                 return (
-                  <option value="Products" className="text-[17px] text-white">
+                  <option value="Products" className="text-[17px] text-white" key={product.time}>
                     {product.address.state}
                   </option>
                 );
@@ -54,7 +54,7 @@ const LeftMenu = ({ products }) => {
             {products &&
               products.map((product) => {
                 return (
-                  <option value="Products" className="text-[17px] text-white">
+                  <option value="Products" className="text-[17px] text-white" key={product.time}>
                     {product.address.city}
                   </option>
                 );
