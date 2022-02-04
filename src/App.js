@@ -40,8 +40,8 @@ function App() {
   ///////////////////////////////////////////////////
 
   return (
-    <div className="flex bg-[#292929] p-[43px] h-screen">
-      <LeftMenu />
+    <div className="flex bg-[#292929] p-[43px]">
+      <LeftMenu products={products}/>
       <div>
         <Name />
 
