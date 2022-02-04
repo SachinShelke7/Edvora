@@ -1,7 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Slider from "react-slick";
 import "./App.css";
 import { Name, LeftMenu, Products, Test } from "./components/index";
+import JasonTest from "./components/JasonTest";
 
 const URL = "https://assessment-edvora.herokuapp.com";
 
@@ -37,7 +39,14 @@ function App() {
 
   // console.log(products);
 
-  ///////////////////////////////////////////////////
+    const settings = {
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 1
+    };
+
 
   return (
     <div className="flex bg-[#292929] p-[43px]">
@@ -47,7 +56,10 @@ function App() {
 
         <div className="">
           <div className="bg-[#131313] p-[20px] rounded-[15px] text-[#fff] overflow-x-scroll w-[984px] scrollbar-hide">
-            <div className="flex space-x-4">
+            
+            <div className="px-2">
+              
+        <Slider {...settings}>
               {products &&
                 products.map((product) => {
                   return (
@@ -91,8 +103,12 @@ function App() {
                     </div>
                   );
                 })}
+                </Slider>
+
             </div>
+            
           </div>
+         
         </div>
         {/* Test */}
         
@@ -107,7 +123,10 @@ function App() {
           <hr className="pt-[4px] pb-[12px] opacity-[0.5]" />
         </div>
         <Test />
+
       </div>
+
+
     </div>
   );
 }

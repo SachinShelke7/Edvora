@@ -14,8 +14,6 @@ const LeftMenu = ({ products }) => {
         <div className="flex flex-col space-y-4 justify-center items-center text-[#fff]">
 
 
-
-
           <select
             name=""
             id=""
@@ -29,6 +27,7 @@ const LeftMenu = ({ products }) => {
                   </option>
                 );
               })}
+
           </select>
 
           <select
