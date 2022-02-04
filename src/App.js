@@ -46,7 +46,7 @@ function App() {
         <Name />
 
         <div className="">
-          <div className="bg-[#131313] p-[20px] rounded-[15px] text-[#fff] overflow-x-scroll w-[984px]">
+          <div className="bg-[#131313] p-[20px] rounded-[15px] text-[#fff] overflow-x-scroll w-[984px] scrollbar-hide">
             <div className="flex space-x-4">
               {products &&
                 products.map((product) => {
@@ -58,11 +58,11 @@ function App() {
                             <img
                               src={product.image}
                               alt=""
-                              className="h-[70px]"
+                              className="w-[70px]"
                             />
                           </div>
                           <div className="space-y-2">
-                            <h4 className="font-medium text-[15px] whitespace-nowrap">
+                            <h4 className="font-medium text-[15px] whitespace-nowrap overflow-hidden">
                               {product.product_name}
                             </h4>
                             <p className="text-[13px] opacity-[0.6]">
@@ -76,11 +76,11 @@ function App() {
                             </p>
                           </div>
                         </div>
-                        <div className="flex justify-between text-xs opacity-[0.6] pt-[6px]">
-                          <p className="whitespace-nowrap pr-2">
+                        <div className="flex justify-between text-[10px] opacity-[0.6] pt-[6px]">
+                          <p className="whitespace-nowrap pr-2 w-1/2">
                             {product.address.state}
                           </p>
-                          <p className="pr-[10px] whitespace-nowrap overflow-hidden pl-2">
+                          <p className="pr-[10px] whitespace-nowrap overflow-hidden pl-2 w-1/2">
                             {product.time}
                           </p>
                         </div>
@@ -101,7 +101,12 @@ function App() {
           <hr className="pt-[4px] pb-[12px] opacity-[0.5]" />
         </div>
         <Test />
-        <div></div>
+
+        <div>
+          <h3 className="text-[20px] text-[#fff] pt-[45px]">Demo Products</h3>
+          <hr className="pt-[4px] pb-[12px] opacity-[0.5]" />
+        </div>
+        <Test />
       </div>
     </div>
   );

@@ -30,7 +30,7 @@ const Content = () => (
 const Test = () => {
   return (
     <div className="">
-      <div className="bg-[#131313] p-[20px] rounded-[15px] text-[#fff] overflow-x-scroll w-[984px]">
+      <div className="bg-[#131313] p-[20px] rounded-[15px] text-[#fff] overflow-x-scroll w-[984px] scrollbar-hide">
         <div className="flex space-x-4">
           <Content />
           <Content />
