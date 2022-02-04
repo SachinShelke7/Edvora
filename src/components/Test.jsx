@@ -1,6 +1,7 @@
 import React from "react";
 import rectangle from "../assets/Rectangle.png";
 
+
 const Content = () => (
 
     <div>
